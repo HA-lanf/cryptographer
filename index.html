@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ENCRYPT DECRYPT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>ENCRYPT YOUR MESSAGE USING THE CUSTOM KEY CHOSEN BY YOU. SHARE THE ENCRYPTED MESSAGE AND YOUR KEY TO YOUR FRIENDS SO THEY CAN DECRYPT IT.</h2>
+    
+    <h3>ENCRYPTER</h3>
+    <form id="encryptForm">
+        <div class="encrypt">
+            <textarea id="inpute" placeholder="Enter your message here..." required></textarea>
+            <input type="text" id="keyInputEncrypt" placeholder="Create your key here..." required />
+            <button id="btnEncrypt" type="submit">Encrypt</button>
+            <textarea id="outputTexte" placeholder="Encrypted message will appear here..." readonly></textarea>
+        </div>
+    </form>
+
+    <h3>DECRYPTER</h3>
+    <form id="decryptForm">
+        <div class="decrypt">
+            <textarea id="inputd" placeholder="Paste your encrypted message here..." required></textarea>
+            <input type="text" id="keyInputDecrypt" placeholder="Enter your key here..." required />
+            <button id="btnDecrypt" type="submit">Decrypt</button>
+            <textarea id="outputTextd" placeholder="Decrypted message will appear here..." readonly></textarea>
+        </div>
+    </form>
+</body>
+</html>
